@@ -1,0 +1,1 @@
+# Workaround for .NET Native
