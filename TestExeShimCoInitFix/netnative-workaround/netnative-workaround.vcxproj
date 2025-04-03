@@ -96,6 +96,7 @@
       <EntryPointSymbol>MainEntryPoint</EntryPointSymbol>
       <AdditionalOptions>/APPCONTAINER</AdditionalOptions>
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libucrtd.lib;$(SolutionDir)$(Configuration)\TestExeShimCoInitFix.lib</AdditionalDependencies>
+      <DelayLoadDLLs>$(TargetName).dll</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,6 +117,7 @@
       <StackReserveSize>1048576</StackReserveSize>
       <EntryPointSymbol>MainEntryPoint</EntryPointSymbol>
       <AdditionalOptions>/APPCONTAINER</AdditionalOptions>
+      <DelayLoadDLLs>$(TargetName).dll</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -133,6 +135,7 @@
       <EntryPointSymbol>MainEntryPoint</EntryPointSymbol>
       <AdditionalOptions>/APPCONTAINER</AdditionalOptions>
       <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libucrtd.lib;$(SolutionDir)x64\$(Configuration)\TestExeShimCoInitFix.lib</AdditionalDependencies>
+      <DelayLoadDLLs>$(TargetName).dll</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,6 +156,7 @@
       <StackReserveSize>1048576</StackReserveSize>
       <EntryPointSymbol>MainEntryPoint</EntryPointSymbol>
       <AdditionalOptions>/APPCONTAINER</AdditionalOptions>
+      <DelayLoadDLLs>$(TargetName).dll</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
